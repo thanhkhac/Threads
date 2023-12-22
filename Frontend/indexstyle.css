@@ -1,0 +1,44 @@
+body {
+    background-color: #101010;
+    min-height: 100vh;
+}
+
+.newthreads {
+    padding: 10px 0px;
+}
+
+.newthreads--avatar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 10%;
+}
+
+.newthreads--avatar img {
+    width: 100%;
+}
+
+.newthreads--form {
+    padding: 0px 10px;
+    color: #808080;
+    width: 70%;
+    align-items: center;
+    display: flex;
+}
+
+.newthreads--button {
+    display: flex;
+    align-items: center;
+}
+
+.newthreads--button button {
+    background-color: #4D4D4D;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: 0px;
+    ;
+}
+
+.line {
+    height: 1px;
+    background-color: #4D4D4D;
+}
