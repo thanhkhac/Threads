@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/cec63a414e.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/cec63a414e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="indexstyle.css">
     <style>
-        .logo a{
+        .logo a {
             color: white;
             padding: 10px 20px;
         }
@@ -28,7 +28,6 @@
             background-color: #ddd;
             color: black;
         }
-        
     </style>
 </head>
 
@@ -40,12 +39,12 @@
             </a>
         </div>
         <div class="col-sm-4">
-            <div class="navbar justify-content-around ">
+            <div class="navbar justify-content-around navbar--custom">
                 <a href="#"><i class="fas fa-home fa-2x"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
-                <a href="#"><i class="fas fa-plus fa-2x"></i></a>
-                <a href="#"><i class="fa-regular fa-heart fa-2x"></i></a>
-                <a href="#"><i class="fa-regular fa-user fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x text--threads--gray"></i></a>
+                <a href="#"><i class="fas fa-plus fa-2x text--threads--gray"></i></a>
+                <a href="#"><i class="fa-regular fa-heart fa-2x text--threads--gray"></i></a>
+                <a href="#"><i class="fa-regular fa-user fa-2x text--threads--gray"></i></a>
             </div>
         </div>
 
@@ -56,23 +55,70 @@
         </div>
     </header>
     <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-5">
+            <!-- Bắt đầu newthreads -->
             <div class="newthreads d-flex">
-                <div class="newthreads--avatar">
+                <div class="newthreads__avatar">
                     <img src="avatar.png" alt="">
                 </div>
-                <div class="newthreads--form">
+                <div class="newthreads__form">
                     Bắt đầu threads ...
                 </div>
-                <div class="newthreads--button">
+                <div class="newthreads__postbutton">
                     <button>
                         Đăng
                     </button>
                 </div>
             </div>
-            <div class="line">
+            <!-- Kết thúc newthreads -->
+            <!-- Bắt đầu threads -->
+            <div class="line"></div>
+            <div class="threads d-flex">
+                <div class="threads__avatar">
+                    <div class="threads__avatar__block">
+                        <img src="avatar.png" alt="">
+                    </div>
+                </div>
+                <div class="threads__post">
+                    <div class="threads__post__header d-flex">
+                        <div class="threads__post__header__username text-white fw-bold">
+                            khac__thanh
+                        </div>
+                        <div class="threads__post__header__time text--threads--gray ms-auto">
+                            2 giờ
+                        </div>
+                        <div class="threads__post__header__more text-white ms-1">
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="threads__post__body text-white">
+                        <div>
+                            <p>
+                                Summer has come and passed<br>
+                                The innocent can never last<br>
+                                Wake me up when September ends<br>
+                                Like my fathers come to pass<br>
+                                Seven years has gone so fast<br>
+                                Wake me up when September ends
+                            </p>
+                        </div>
+                        <div class="threads__post__body__media">
+                            <div class="d-flex gap-3 mb-2">
+                                <img src="Media1.JPG" alt="">
+                                <img src="Media2.JPG" alt="">
+                                <img src="Media3.JPG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="threads__post__footer">
 
+                    </div>
+                </div>
             </div>
+            <div class="line"></div>
+            
         </div>
     </div>
 

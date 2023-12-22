@@ -3,21 +3,29 @@ body {
     min-height: 100vh;
 }
 
+.navbar--custom a {
+    font-size: 70%;
+}
+
+.text--threads--gray {
+    color: #4D4D4D;
+}
+
 .newthreads {
     padding: 10px 0px;
 }
 
-.newthreads--avatar {
+.newthreads__avatar {
     border-radius: 100%;
     overflow: hidden;
-    width: 10%;
+    width: 8%;
 }
 
-.newthreads--avatar img {
+.newthreads__avatar img {
     width: 100%;
 }
 
-.newthreads--form {
+.newthreads__form {
     padding: 0px 10px;
     color: #808080;
     width: 70%;
@@ -25,20 +33,78 @@ body {
     display: flex;
 }
 
-.newthreads--button {
+.newthreads__postbutton {
     display: flex;
     align-items: center;
+    width: 20%;
+    justify-content: end;
 }
 
-.newthreads--button button {
+.newthreads__postbutton button {
     background-color: #4D4D4D;
     border-radius: 20px;
     padding: 5px 20px;
     border: 0px;
-    ;
 }
 
 .line {
     height: 1px;
+    background-color: #4D4D4D;
+}
+
+.threads {
+    padding: 10px 0px;
+}
+
+.threads__avatar {
+    width: 8%;
+}
+
+.threads__avatar__block {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.threads__avatar img {
+    width: 100%;
+}
+
+.threads__post {
+    width: 90%;
+    padding-left: 10px;
+}
+
+.threads__post__header__more button {
+    border: 0px;
+    border-radius: 100%;
+    color: white;
+    background-color: inherit;
+}
+
+.threads__post__header__more button:hover {
+    background-color: #4D4D4D;
+}
+
+.threads__post__body__media {
+    overflow: scroll;
+}
+/* Bắt đầu Scrollbar cho media */
+.threads__post__body__media::-webkit-scrollbar {
+    width: 0px;
+}
+
+.threads__post__body__media::-webkit-scrollbar-track {
+    background-color: #4D4D4D;
+    border-radius: 20px;
+}
+.threads__post__body__media::-webkit-scrollbar-thumb {
+    background-color: rgb(145, 145, 145);
+    border-radius: 50px;
+}
+/* Kết thúc Scrollbar cho media */
+.threads__post__body__media img {
+    height: 30vh;
+    border-radius: 20px;
+    padding: 0.3px;
     background-color: #4D4D4D;
 }
