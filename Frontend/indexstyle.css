@@ -1,6 +1,20 @@
 body {
     background-color: #101010;
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+:hover{
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+    color:inherit
 }
 
 .navbar--custom a {
@@ -8,7 +22,7 @@ body {
 }
 
 .text--threads--gray {
-    color: #4D4D4D;
+    color: #808080;
 }
 
 .newthreads {
@@ -85,26 +99,105 @@ body {
     background-color: #4D4D4D;
 }
 
+.threads__post__body {
+    font-size: 90%;
+    font-weight: 400;
+}
+
 .threads__post__body__media {
     overflow: scroll;
 }
-/* Bắt đầu Scrollbar cho media */
-.threads__post__body__media::-webkit-scrollbar {
+
+
+/* Bắt đầu Scrollbar--custome */
+.scrollbar-custom::-webkit-scrollbar {
     width: 0px;
 }
 
-.threads__post__body__media::-webkit-scrollbar-track {
+.scrollbar-custom::-webkit-scrollbar-track {
     background-color: #4D4D4D;
     border-radius: 20px;
 }
-.threads__post__body__media::-webkit-scrollbar-thumb {
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
     background-color: rgb(145, 145, 145);
     border-radius: 50px;
 }
-/* Kết thúc Scrollbar cho media */
+
+/* Kết thúc Scrollbar */
 .threads__post__body__media img {
     height: 30vh;
     border-radius: 20px;
     padding: 0.3px;
     background-color: #4D4D4D;
+}
+
+.threads__post__body__singlemedia{
+    overflow: auto;
+}
+
+.threads__post__body__singlemedia img{
+    height: 60vh;
+    border-radius: 20px;
+    padding: 0.3px;
+    background-color: #4D4D4D;
+}
+
+.threads__post__footer__interaction button {
+    border: 0px;
+    border-radius: 100%;
+    color: white;
+    background-color: inherit;
+    font-size: 120%;
+}
+
+.threads__post__footer__interaction div {
+    padding: 3px;
+    border-radius: 100%;
+}
+
+.threads__post__footer__interaction div:hover {
+    background-color: #4f4f4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px 5%;
+    }
 }
